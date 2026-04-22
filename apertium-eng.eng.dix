@@ -21,6 +21,7 @@
     <sdef n="ij"              c="Interjection"/>
     <sdef n="adj"             c="Adjective"/>
     <sdef n="prn"             c="Pronoun"/>
+    <sdef n="v"             c="Verb"/>
 
     <sdef n="attr"            c="Attributive"/>
     <sdef n="top"             c="Toponym"/>
@@ -72,6 +73,11 @@
     <sdef n="pprs"            c="Present participle"/>
     <sdef n="pasv"            c="Passive"/>
     <sdef n="actv"            c="Active voice"/>
+    <sdef n="prog"            c="Progressive"/>
+    <sdef n="past"             c="Past"/>
+
+    <sdef n="be"             c="Be Verb"/>
+    <sdef n="will"             c="Will Vaux"/>
 
     <sdef n="sint"            c="Synthetic (of adjectives)"/>
     <sdef n="pst"             c="Positive"/>
@@ -112,6 +118,43 @@
       <e><p><l>s</l><r><s n="n"/><s n="pl"/></r></p></e>
     </pardef>
     -->
+    <pardef n="house__n">
+      <e><p><l></l><r><s n="n"/></r></p></e>
+      <e><p><l>s</l><r><s n="n"/><s n="pl"/></r></p></e>
+    </pardef>
+    <pardef n="walk__v">
+      <e><p><l></l><r><s n="v"/></r></p></e>
+      <e><p><l>ed</l><r><s n="v"/><s n="past"/></r></p></e>
+      <e><p><l>ing</l><r><s n="v"/><s n="pres"/><s n="prog"/></r></p></e>
+    </pardef>
+    <pardef n="/eat__v">
+      <e><p><l>eat</l><r>eat<s n="v"/></r></p></e>
+      <e><p><l>ate</l><r>eat<s n="v"/><s n="past"/></r></p></e>
+      <e><p><l>eating</l><r>eat<s n="v"/><s n="pres"/><s n="prog"/></r></p></e>
+    </pardef>
+    <pardef n="r/un__v">
+      <e><p><l>un</l><r>un<s n="v"/></r></p></e>
+      <e><p><l>an</l><r>un<s n="v"/><s n="past"/></r></p></e>
+      <e><p><l>unning</l><r>un<s n="v"/><s n="pres"/><s n="prog"/></r></p></e>
+    </pardef>
+    <pardef n="/be__v">
+      <e><p><l>be</l><r>be<s n="be"/><s n="v"/></r></p></e>
+      <e><p><l>am</l><r>be<s n="be"/><s n="v"/><s n="p1"/></r></p></e>
+      <e><p><l>is</l><r>be<s n="be"/><s n="v"/><s n="sg"/></r></p></e>
+    </pardef>
+    <pardef n="I__prn">
+      <e><p><l></l><r><s n="prn"/></r></p></e>
+    </pardef>
+    <pardef n="will__vaux">
+      <e><p><l></l><r><s n="will"/></r></p></e>
+    </pardef>
+    <pardef n="/a__det">
+      <e><p><l>a</l><r>a<s n="det"/><s n="ind"/></r></p></e>
+      <e><p><l>the</l><r>a<s n="det"/><s n="def"/></r></p></e>
+    </pardef>
+    <pardef n="on__pr">
+      <e><p><l></l><r><s n="pr"/></r></p></e>
+    </pardef>
   </pardefs>
 
   <section id="main" type="standard">
@@ -119,6 +162,23 @@
     <!-- Example entry:
     <e lm="house"><i>house</i><par n="house__n"/></e>
     -->
+    <e lm="house"><i>house</i><par n="house__n"/></e>
+    <e lm="couch"><i>couch</i><par n="house__n"/></e>
+    <e lm="on"><i>on</i><par n="on__pr"/></e>
+    <e lm="cat"><i>cat</i><par n="house__n"/></e>
+    <e lm="rock"><i>rock</i><par n="house__n"/></e>
+    <e lm="I"><i>I</i><par n="I__prn"/></e>
+    <e lm="you"><i>you</i><par n="I__prn"/></e>
+    <e lm="walk"><i>walk</i><par n="walk__v"/></e>
+    <e lm="sleep"><i>sleep</i><par n="walk__v"/></e>
+    <e lm="eat"><i></i><par n="/eat__v"/></e>
+    <e lm="fish"><i>fish</i><par n="house__n"/></e>
+    <e lm="water"><i>water</i><par n="house__n"/></e>
+    <e lm="be"><i></i><par n="/be__v"/></e>
+    <e lm="a"><i></i><par n="/a__det"/></e>
+    <e lm="run"><i>r</i><par n="r/un__v"/></e>
+    <e lm="will"><i>will</i><par n="will__vaux"/></e>
+    <e lm="fire"><i>fire</i><par n="house__n"/></e>
   </section>
 
   <section id="final" type="inconditional">
