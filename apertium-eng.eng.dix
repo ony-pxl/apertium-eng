@@ -21,7 +21,8 @@
     <sdef n="ij"              c="Interjection"/>
     <sdef n="adj"             c="Adjective"/>
     <sdef n="prn"             c="Pronoun"/>
-    <sdef n="v"             c="Verb"/>
+    <sdef n="v"               c="Verb"/>
+    <sdef n="z"               c="3rd person present"/>
 
     <sdef n="attr"            c="Attributive"/>
     <sdef n="top"             c="Toponym"/>
@@ -116,6 +117,11 @@
       <e><p><l></l><r><s n="will"/></r></p></e>
     </pardef>
 
+    <!-- conjunction pardefs -->
+    <pardef n="and__cnjcoo">
+      <e><p><l></l><r><s n="cnjcoo"/></r></p></e>
+    </pardef>
+
     <!-- determiner pardefs -->
     <pardef n="/a__det">
       <e><p><l>a</l><r>a<s n="det"/><s n="ind"/></r></p></e>
@@ -147,22 +153,38 @@
 
     <!-- verb pardefs -->
     <pardef n="walk__v">
-      <e><p><l></l><r><s n="v"/></r></p></e>
+      <e><p><l></l><r><s n="v"/><s n="pres"/></r></p></e>
+      <e><p><l>s</l><r><s n="v"/><s n="pres"/></r></p></e>
       <e><p><l>ed</l><r><s n="v"/><s n="past"/></r></p></e>
       <e><p><l>ing</l><r><s n="v"/><s n="pres"/><s n="prog"/></r></p></e>
     </pardef>
     <pardef n="/eat__v">
-      <e><p><l>eat</l><r>eat<s n="v"/></r></p></e>
+      <e><p><l>eat</l><r>eat<s n="v"/><s n="pres"/></r></p></e>
+      <e><p><l>eats</l><r>eat<s n="v"/><s n="pres"/></r></p></e>
       <e><p><l>ate</l><r>eat<s n="v"/><s n="past"/></r></p></e>
       <e><p><l>eating</l><r>eat<s n="v"/><s n="pres"/><s n="prog"/></r></p></e>
     </pardef>
     <pardef n="r/un__v">
-      <e><p><l>un</l><r>un<s n="v"/></r></p></e>
+      <e><p><l>un</l><r>un<s n="v"/><s n="pres"/></r></p></e>
+      <e><p><l>uns</l><r>un<s n="v"/><s n="pres"/></r></p></e>
       <e><p><l>an</l><r>un<s n="v"/><s n="past"/></r></p></e>
       <e><p><l>unning</l><r>un<s n="v"/><s n="pres"/><s n="prog"/></r></p></e>
     </pardef>
+    <pardef n="dr/ink__v">
+      <e><p><l>ink</l><r>ink<s n="v"/><s n="pres"/></r></p></e>
+      <e><p><l>inks</l><r>ink<s n="v"/><s n="pres"/></r></p></e>
+      <e><p><l>ank</l><r>ink<s n="v"/><s n="past"/></r></p></e>
+      <e><p><l>inking</l><r>ink<s n="v"/><s n="pres"/><s n="prog"/></r></p></e>
+    </pardef>
+    <pardef n="s/it__v">
+      <e><p><l>it</l><r>it<s n="v"/><s n="pres"/></r></p></e>
+      <e><p><l>its</l><r>it<s n="v"/><s n="pres"/></r></p></e>
+      <e><p><l>at</l><r>it<s n="v"/><s n="past"/></r></p></e>
+      <e><p><l>itting</l><r>it<s n="v"/><s n="pres"/><s n="prog"/></r></p></e>
+    </pardef>
     <pardef n="sle/ep__v">
-      <e><p><l>ep</l><r>ep<s n="v"/></r></p></e>
+      <e><p><l>ep</l><r>ep<s n="v"/><s n="pres"/></r></p></e>
+      <e><p><l>eps</l><r>ep<s n="v"/><s n="pres"/></r></p></e>
       <e><p><l>pt</l><r>ep<s n="v"/><s n="past"/></r></p></e>
       <e><p><l>eping</l><r>ep<s n="v"/><s n="pres"/><s n="prog"/></r></p></e>
     </pardef>
@@ -172,7 +194,12 @@
       <e><p><l>is</l><r>be<s n="be"/><s n="v"/><s n="sg"/></r></p></e>
       <e><p><l>are</l><r>be<s n="be"/><s n="v"/><s n="pl"/></r></p></e>
     </pardef>
-
+    <pardef n="wr/ite__v">
+      <e><p><l>ite</l><r>ite<s n="v"/><s n="pres"/></r></p></e>
+      <e><p><l>ites</l><r>ite<s n="v"/><s n="pres"/></r></p></e>
+      <e><p><l>ote</l><r>ite<s n="v"/><s n="past"/></r></p></e>
+      <e><p><l>iting</l><r>ite<s n="v"/><s n="pres"/><s n="prog"/></r></p></e>
+    </pardef>
   </pardefs>
 
   <section id="main" type="standard">
@@ -181,11 +208,22 @@
     <e lm="house"><i>house</i><par n="house__n"/></e>
     -->
 
+    <!-- NUMBER OF WORDS (34) -->
+
+    <!-- Auxiliary Verbs -->
+    <e lm="will"><i>will</i><par n="will__vaux"/></e>
+
+    <!-- Auxiliary Verbs -->
+    <e lm="and"><i>and</i><par n="and__cnjcoo"/></e>
+
     <!-- Nouns -->
+    <e lm="bed"><i>bed</i><par n="house__n"/></e>
     <e lm="cat"><i>cat</i><par n="house__n"/></e>
+    <e lm="chair"><i>chair</i><par n="house__n"/></e> 
     <e lm="chicken"><i>chicken</i><par n="house__n"/></e> 
     <e lm="cow"><i>cow</i><par n="house__n"/></e> 
     <e lm="dog"><i>dog</i><par n="house__n"/></e>
+    <e lm="door"><i>door</i><par n="house__n"/></e>
     <e lm="duck"><i>duck</i><par n="house__n"/></e>      
     <e lm="couch"><i>couch</i><par n="house__n"/></e>
     <e lm="fire"><i>fire</i><par n="fire__n"/></e>
@@ -194,27 +232,35 @@
     <e lm="house"><i>house</i><par n="house__n"/></e>
     <e lm="pig"><i>pig</i><par n="house__n"/></e> 
     <e lm="rock"><i>rock</i><par n="house__n"/></e>
+    <e lm="table"><i>table</i><par n="house__n"/></e>
     <e lm="water"><i>water</i><par n="fire__n"/></e>
+    <e lm="window"><i>window</i><par n="house__n"/></e>
 
     <!-- Prepositions -->
     <e lm="on"><i>on</i><par n="on__pr"/></e>
+    <e lm="near"><i>near</i><par n="on__pr"/></e>
+    <e lm="by"><i>by</i><par n="on__pr"/></e>
+    <e lm="to"><i>to</i><par n="on__pr"/></e>
 
     <!-- Pronouns -->
     <e lm="I"><i>I</i><par n="I__prn"/></e>
     <e lm="you"><i>you</i><par n="I__prn"/></e>
 
     <!-- Verbs -->
-    <e lm="be"><i></i><par n="/be__v"/></e> 
+    <e lm="be"><i></i><par n="/be__v"/></e>
+    <e lm="drink"><i>dr</i><par n="dr/ink__v"/></e>
     <e lm="eat"><i></i><par n="/eat__v"/></e>
+    <e lm="listen"><i>listen</i><par n="walk__v"/></e>
     <e lm="run"><i>r</i><par n="r/un__v"/></e>
+    <e lm="sit"><i>s</i><par n="s/it__v"/></e>
     <e lm="sleep"><i>sle</i><par n="sle/ep__v"/></e>
+    <!--e lm="read"><i></i><par n="/be__v"/></e-->
     <e lm="walk"><i>walk</i><par n="walk__v"/></e>
+    <e lm="write"><i>wr</i><par n="wr/ite__v"/></e>
 
     <!-- Determiners -->
     <e lm="a"><i></i><par n="/a__det"/></e>
 
-    <!-- Auxiliary Verbs -->
-    <e lm="will"><i>will</i><par n="will__vaux"/></e>
   </section>
 
   <section id="final" type="inconditional">
