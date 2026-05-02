@@ -256,6 +256,7 @@
     <e lm="sleep"><i>sle</i><par n="sle/ep__v"/></e>
     <!--e lm="read"><i></i><par n="/be__v"/></e-->
     <e lm="walk"><i>walk</i><par n="walk__v"/></e>
+    <e lm="sing"><i>sing</i><par n="walk__v"/></e>
     <e lm="write"><i>wr</i><par n="wr/ite__v"/></e>
 
     <!-- Determiners -->
@@ -269,6 +270,7 @@
     <e><re>,</re>          <p><l></l><r><s n="cm"/></r></p></e>
   
       <!-- ═══ IMPORTED FROM sample1.csv ═══ -->
+      <e lm="sing"><i>sing</i><par n="walk__v"/></e>
       <e lm="talk"><i>talk</i><par n="walk__v"/></e>
       <e lm="see"><i>see</i><par n="walk__v"/></e>
       <e lm="hear"><i>hear</i><par n="walk__v"/></e>
@@ -1552,6 +1554,7 @@
       <e lm="research"><i>research</i><par n="house__n"/></e>
     
       <!-- ═══ IMPORTED FROM sample1.csv ═══ -->
+      <e lm="sing"><i>sing</i><par n="walk__v"/></e>
     </section>
 
 </dictionary>
