@@ -1550,6 +1550,8 @@
       <e lm="requirement"><i>requirement</i><par n="house__n"/></e>
       <e lm="rescue"><i>rescue</i><par n="house__n"/></e>
       <e lm="research"><i>research</i><par n="house__n"/></e>
+    
+      <!-- ═══ IMPORTED FROM sample1.csv ═══ -->
     </section>
 
 </dictionary>
