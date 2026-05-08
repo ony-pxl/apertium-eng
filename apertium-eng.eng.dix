@@ -22,7 +22,6 @@
     <sdef n="adj"             c="Adjective"/>
     <sdef n="prn"             c="Pronoun"/>
     <sdef n="v"               c="Verb"/>
-    <sdef n="z"               c="3rd person present"/>
 
     <sdef n="attr"            c="Attributive"/>
     <sdef n="top"             c="Toponym"/>
@@ -76,8 +75,8 @@
     <sdef n="actv"            c="Active voice"/>
     <sdef n="prog"            c="Progressive"/>
     <sdef n="past"             c="Past"/>
+    <sdef n="pstp"             c="Past participle"/>
 
-    <sdef n="be"             c="Be Verb"/>
     <sdef n="will"             c="Will Vaux"/>
 
     <sdef n="sint"            c="Synthetic (of adjectives)"/>
@@ -112,9 +111,19 @@
       <e><par n="numeral"/><p><l></l><r><s n="num"/></r></p></e>
     </pardef>
 
-    <!-- auxilliary verb pardefs -->
+    <pardef n="num">
+      <e><p><l></l><r><s n="num"/></r></p></e>
+    </pardef>
+
+    <!-- adjective pardefs -->
     <pardef n="beautiful__adj">
       <e><p><l></l><r><s n="adj"/></r></p></e>
+      <e><p><l>ly</l><r><s n="adv"/></r></p></e>
+    </pardef>
+
+    <!-- adverb pardefs -->
+    <pardef n="every__adv">
+      <e><p><l></l><r><s n="adv"/></r></p></e>
     </pardef>
 
     <!-- auxilliary verb pardefs -->
@@ -137,17 +146,28 @@
     <pardef n="house__n">
       <e><p><l></l><r><s n="n"/></r></p></e>
       <e><p><l>s</l><r><s n="n"/><s n="pl"/></r></p></e>
+      <e><p><l>'s</l><r><s n="n"/><s n="pos"/></r></p></e>
     </pardef>
     <pardef n="fire__n">
       <e><p><l></l><r><s n="n"/></r></p></e>
+      <e><p><l>'s</l><r><s n="n"/><s n="pos"/></r></p></e>
     </pardef>
     <pardef n="fish__n">
       <e><p><l></l><r><s n="n"/></r></p></e>
       <e><p><l>es</l><r><s n="n"/><s n="pl"/></r></p></e>
+      <e><p><l>'s</l><r><s n="n"/><s n="pos"/></r></p></e>
     </pardef>
     <pardef n="m/an__n">
       <e><p><l>an</l><r>an<s n="n"/></r></p></e>
       <e><p><l>en</l><r>an<s n="n"/><s n="pl"/></r></p></e>
+      <e><p><l>an's</l><r><s n="n"/><s n="pos"/></r></p></e>
+      <e><p><l>en's</l><r>an<s n="n"/><s n="pl"/><s n="pos"/></r></p></e>
+    </pardef>
+    <pardef n="wom/an__n">
+      <e><p><l>an</l><r>an<s n="n"/></r></p></e>
+      <e><p><l>en</l><r>an<s n="n"/><s n="pl"/></r></p></e>
+      <e><p><l>an's</l><r><s n="n"/><s n="pos"/></r></p></e>
+      <e><p><l>en's</l><r>an<s n="n"/><s n="pl"/><s n="pos"/></r></p></e>
     </pardef>
 
     <!-- preposition pardefs -->
@@ -156,7 +176,19 @@
     </pardef>
 
     <!-- pronoun pardefs -->
-    <pardef n="I__prn">
+    <pardef n="/I__prn">
+      <e><p><l>I</l><r>I<s n="prn"/><s n="p1"/></r></p></e>
+      <e><p><l>mine</l><r>I<s n="prn"/><s n="gen"/><s n="p1"/></r></p></e>
+      <e><p><l>myself</l><r>I<s n="prn"/><s n="ref"/><s n="p1"/></r></p></e>
+      <e><p><l>my</l><r>I<s n="prn"/><s n="gen"/><s n="p1"/></r></p></e>
+    </pardef>
+    <pardef n="you__prn">
+      <e><p><l></l><r><s n="prn"/><s n="p2"/></r></p></e>
+      <e><p><l>r</l><r><s n="prn"/><s n="gen"/><s n="p2"/></r></p></e>
+      <e><p><l>rself</l><r><s n="prn"/><s n="ref"/><s n="p2"/></r></p></e>
+      <e><p><l>rs</l><r><s n="prn"/><s n="gen"/><s n="p2"/></r></p></e>
+    </pardef>
+    <pardef n="this__prn">
       <e><p><l></l><r><s n="prn"/></r></p></e>
     </pardef>
 
@@ -167,6 +199,14 @@
       <e><p><l>ed</l><r><s n="v"/><s n="past"/></r></p></e>
       <e><p><l>ing</l><r><s n="v"/><s n="pres"/><s n="prog"/></r></p></e>
     </pardef>
+    <pardef n="d/o__v">
+      <e><p><l>o</l><r>o<s n="v"/><s n="pres"/></r></p></e>
+      <e><p><l>oes</l><r>o<s n="v"/><s n="pres"/></r></p></e>
+      <e><p><l>id</l><r>o<s n="v"/><s n="past"/></r></p></e>
+      <e><p><l>one</l><r>o<s n="v"/><s n="pstp"/></r></p></e>
+      <e><p><l>oing</l><r>o<s n="v"/><s n="pres"/><s n="prog"/></r></p></e>
+      <e><p><l>on't</l><r>o<s n="v"/><s n="pres"/><j/>not<s n="adv"/></r></p></e>
+    </pardef>
     <pardef n="love__v">
       <e><p><l></l><r><s n="v"/><s n="pres"/></r></p></e>
     </pardef>
@@ -174,6 +214,7 @@
       <e><p><l>eat</l><r>eat<s n="v"/><s n="pres"/></r></p></e>
       <e><p><l>eats</l><r>eat<s n="v"/><s n="pres"/></r></p></e>
       <e><p><l>ate</l><r>eat<s n="v"/><s n="past"/></r></p></e>
+      <e><p><l>eaten</l><r>eat<s n="v"/><s n="pstp"/></r></p></e>
       <e><p><l>eating</l><r>eat<s n="v"/><s n="pres"/><s n="prog"/></r></p></e>
     </pardef>
     <pardef n="r/un__v">
@@ -186,6 +227,7 @@
       <e><p><l>ow</l><r>ow<s n="v"/><s n="pres"/></r></p></e>
       <e><p><l>ows</l><r>ow<s n="v"/><s n="pres"/></r></p></e>
       <e><p><l>ew</l><r>ow<s n="v"/><s n="past"/></r></p></e>
+      <e><p><l>own</l><r>ow<s n="v"/><s n="pstp"/></r></p></e>
       <e><p><l>owing</l><r>ow<s n="v"/><s n="pres"/><s n="prog"/></r></p></e>
     </pardef>
     <pardef n="read__v">
@@ -197,6 +239,7 @@
       <e><p><l>ink</l><r>ink<s n="v"/><s n="pres"/></r></p></e>
       <e><p><l>inks</l><r>ink<s n="v"/><s n="pres"/></r></p></e>
       <e><p><l>ank</l><r>ink<s n="v"/><s n="past"/></r></p></e>
+      <e><p><l>unk</l><r>ink<s n="v"/><s n="pstp"/></r></p></e>
       <e><p><l>inking</l><r>ink<s n="v"/><s n="pres"/><s n="prog"/></r></p></e>
     </pardef>
     <pardef n="s/it__v">
@@ -211,23 +254,63 @@
       <e><p><l>pt</l><r>ep<s n="v"/><s n="past"/></r></p></e>
       <e><p><l>eping</l><r>ep<s n="v"/><s n="pres"/><s n="prog"/></r></p></e>
     </pardef>
+    <pardef n="ha/ve__v">
+      <e><p><l>ve</l><r>ve<s n="v"/><s n="pres"/></r></p></e>
+      <e><p><l>s</l><r>ve<s n="v"/><s n="pres"/></r></p></e>
+      <e><p><l>d</l><r>ve<s n="v"/><s n="past"/></r></p></e>
+      <e><p><l>ving</l><r>ve<s n="v"/><s n="pres"/><s n="prog"/></r></p></e>
+    </pardef>
     <pardef n="s/ing__v">
       <e><p><l>ing</l><r>ing<s n="v"/><s n="pres"/></r></p></e>
       <e><p><l>ings</l><r>ing<s n="v"/><s n="pres"/></r></p></e>
       <e><p><l>ang</l><r>ing<s n="v"/><s n="past"/></r></p></e>
+      <e><p><l>ung</l><r>ing<s n="v"/><s n="pstp"/></r></p></e>
       <e><p><l>inging</l><r>ing<s n="v"/><s n="pres"/><s n="prog"/></r></p></e>
     </pardef>
     <pardef n="/be__v">
-      <e><p><l>be</l><r>be<s n="be"/><s n="v"/></r></p></e>
-      <e><p><l>am</l><r>be<s n="be"/><s n="v"/><s n="p1"/></r></p></e>
-      <e><p><l>is</l><r>be<s n="be"/><s n="v"/><s n="sg"/></r></p></e>
-      <e><p><l>are</l><r>be<s n="be"/><s n="v"/><s n="pl"/></r></p></e>
+      <e><p><l>be</l><r>be<s n="v"/></r></p></e>
+      <e><p><l>am</l><r>be<s n="v"/><s n="p1"/></r></p></e>
+      <e><p><l>is</l><r>be<s n="v"/><s n="sg"/></r></p></e>
+      <e><p><l>been</l><r>be<s n="v"/><s n="pstp"/></r></p></e>
+      <e><p><l>are</l><r>be<s n="v"/><s n="pl"/></r></p></e>
     </pardef>
     <pardef n="wr/ite__v">
       <e><p><l>ite</l><r>ite<s n="v"/><s n="pres"/></r></p></e>
       <e><p><l>ites</l><r>ite<s n="v"/><s n="pres"/></r></p></e>
       <e><p><l>ote</l><r>ite<s n="v"/><s n="past"/></r></p></e>
+      <e><p><l>itten</l><r>ite<s n="v"/><s n="pstp"/></r></p></e>
       <e><p><l>iting</l><r>ite<s n="v"/><s n="pres"/><s n="prog"/></r></p></e>
+    </pardef>
+    <pardef n="/go__v">
+      <e><p><l>go</l><r>go<s n="v"/><s n="pres"/></r></p></e>
+      <e><p><l>goes</l><r>go<s n="v"/><s n="pres"/></r></p></e>
+      <e><p><l>went</l><r>go<s n="v"/><s n="past"/></r></p></e>
+      <e><p><l>gone</l><r>go<s n="v"/><s n="pstp"/></r></p></e>
+      <e><p><l>going</l><r>go<s n="v"/><s n="pres"/><s n="prog"/></r></p></e>
+    </pardef>
+     <pardef n="lik/e__v">
+      <e><p><l>e</l><r>e<s n="v"/><s n="pres"/></r></p></e>
+      <e><p><l>es</l><r>e<s n="v"/><s n="pres"/></r></p></e>
+      <e><p><l>ed</l><r>e<s n="v"/><s n="past"/></r></p></e>
+      <e><p><l>ing</l><r>go<s n="v"/><s n="pres"/><s n="prog"/></r></p></e>
+    </pardef>
+    <pardef n="underst/and__v">
+      <e><p><l>and</l><r>and<s n="v"/><s n="pres"/></r></p></e>
+      <e><p><l>ands</l><r>and<s n="v"/><s n="pres"/></r></p></e>
+      <e><p><l>ood</l><r>and<s n="v"/><s n="past"/></r></p></e>
+      <e><p><l>anding</l><r>and<s n="v"/><s n="pres"/><s n="prog"/></r></p></e>
+    </pardef>
+    <pardef n="stud/y__v">
+      <e><p><l>y</l><r>y<s n="v"/><s n="pres"/></r></p></e>
+      <e><p><l>ies</l><r>y<s n="v"/><s n="pres"/></r></p></e>
+      <e><p><l>ied</l><r>y<s n="v"/><s n="past"/></r></p></e>
+      <e><p><l>ying</l><r>y<s n="v"/><s n="pres"/><s n="prog"/></r></p></e>
+    </pardef>
+    <pardef n="dr/aw__v">
+      <e><p><l>aw</l><r>aw<s n="v"/><s n="pres"/></r></p></e>
+      <e><p><l>aws</l><r>aw<s n="v"/><s n="pres"/></r></p></e>
+      <e><p><l>ew</l><r>aw<s n="v"/><s n="past"/></r></p></e>
+      <e><p><l>awing</l><r>aw<s n="v"/><s n="pres"/><s n="prog"/></r></p></e>
     </pardef>
   </pardefs>
 
@@ -240,64 +323,151 @@
     <!-- NUMBER OF WORDS (34) -->
 
     <!-- Adjectives -->
+    <e lm="angry"><i>angry</i><par n="beautiful__adj"/></e>    
     <e lm="beautiful"><i>beautiful</i><par n="beautiful__adj"/></e>
+    <e lm="clear"><i>clear</i><par n="beautiful__adj"/></e>
+    <e lm="tired"><i>tired</i><par n="beautiful__adj"/></e>
+    <e lm="good"><i>good</i><par n="beautiful__adj"/></e>
+
+    <!-- Adverbs -->
+    <e lm="every"><i>every</i><par n="every__adv"/></e>
+    <e lm="later"><i>later</i><par n="every__adv"/></e>
+    <e lm="yesterday"><i>yesterday</i><par n="every__adv"/></e>
+    <e lm="now"><i>now</i><par n="every__adv"/></e>
+    <e lm="not"><i>not</i><par n="every__adv"/></e>
+    <e lm="no"><i>no</i><par n="every__adv"/></e>
+    <e lm="yes"><i>yes</i><par n="every__adv"/></e>
+    <e lm="early"><i>early</i><par n="every__adv"/></e>
+    <e lm="how"><i>how</i><par n="every__adv"/></e>
+    <e lm="much"><i>much</i><par n="every__adv"/></e>
+    <e lm="many"><i>many</i><par n="every__adv"/></e>
 
     <!-- Auxiliary Verbs -->
     <e lm="will"><i>will</i><par n="will__vaux"/></e>
 
-    <!-- Auxiliary Verbs -->
+    <!-- Conjunctions -->
     <e lm="and"><i>and</i><par n="and__cnjcoo"/></e>
 
     <!-- Nouns -->
+    <e lm="afternoon"><i>afternoon</i><par n="house__n"/></e>
     <e lm="answer"><i>answer</i><par n="house__n"/></e>
+    <e lm="bag"><i>bag</i><par n="house__n"/></e>
     <e lm="bed"><i>bed</i><par n="house__n"/></e>
     <e lm="boy"><i>boy</i><par n="house__n"/></e>
     <e lm="book"><i>book</i><par n="house__n"/></e>
     <e lm="bird"><i>bird</i><par n="house__n"/></e>
+    <e lm="brother"><i>brother</i><par n="house__n"/></e>
+    <e lm="sister"><i>sister</i><par n="house__n"/></e>
+    <e lm="car"><i>car</i><par n="house__n"/></e>
     <e lm="cat"><i>cat</i><par n="house__n"/></e>
+    <e lm="cellphone"><i>cellphone</i><par n="house__n"/></e>
     <e lm="chair"><i>chair</i><par n="house__n"/></e> 
-    <e lm="chicken"><i>chicken</i><par n="house__n"/></e> 
-    <e lm="cow"><i>cow</i><par n="house__n"/></e> 
+    <e lm="chicken"><i>chicken</i><par n="house__n"/></e>
+    <e lm="classmate"><i>classmate</i><par n="house__n"/></e>
+    <e lm="cow"><i>cow</i><par n="house__n"/></e>
+    <e lm="day"><i>day</i><par n="house__n"/></e>
     <e lm="dog"><i>dog</i><par n="house__n"/></e>
     <e lm="door"><i>door</i><par n="house__n"/></e>
     <e lm="duck"><i>duck</i><par n="house__n"/></e>      
     <e lm="couch"><i>couch</i><par n="house__n"/></e>
+    <e lm="exam"><i>exam</i><par n="house__n"/></e>
     <e lm="fire"><i>fire</i><par n="fire__n"/></e>
     <e lm="fish"><i>fish</i><par n="fish__n"/></e>
+    <e lm="flower"><i>flower</i><par n="house__n"/></e>
+    <e lm="food"><i>food</i><par n="house__n"/></e>
+    <e lm="friend"><i>friend</i><par n="house__n"/></e>
     <e lm="girl"><i>girl</i><par n="house__n"/></e>
+    <e lm="home"><i>home</i><par n="house__n"/></e>
     <e lm="horse"><i>horse</i><par n="house__n"/></e>
     <e lm="house"><i>house</i><par n="house__n"/></e>
+    <e lm="kitten"><i>kitten</i><par n="house__n"/></e>
+    <e lm="land"><i>land</i><par n="fire__n"/></e>
+    <e lm="letter"><i>letter</i><par n="house__n"/></e>
     <e lm="man"><i>m</i><par n="m/an__n"/></e>
+    <e lm="moon"><i>moon</i><par n="house__n"/></e>
+    <e lm="morning"><i>morning</i><par n="house__n"/></e>
+    <e lm="mountain"><i>mountain</i><par n="house__n"/></e>
+    <e lm="night"><i>night</i><par n="house__n"/></e>
+    <e lm="ocean"><i>ocean</i><par n="house__n"/></e>
+    <e lm="park"><i>park</i><par n="house__n"/></e>
+    <e lm="pen"><i>pen</i><par n="house__n"/></e>
+    <e lm="phone"><i>phone</i><par n="house__n"/></e>
     <e lm="pig"><i>pig</i><par n="house__n"/></e> 
+    <e lm="question"><i>question</i><par n="house__n"/></e>
+    <e lm="rain"><i>rain</i><par n="fish__n"/></e>
     <e lm="rock"><i>rock</i><par n="house__n"/></e>
+    <e lm="school"><i>school</i><par n="house__n"/></e>
+    <e lm="sea"><i>sea</i><par n="house__n"/></e>
+    <e lm="seat"><i>seat</i><par n="house__n"/></e>
+    <e lm="sky"><i>sky</i><par n="house__n"/></e>    
+    <e lm="song"><i>song</i><par n="house__n"/></e>
+    <e lm="star"><i>star</i><par n="house__n"/></e>
+    <e lm="student"><i>student</i><par n="house__n"/></e>
+    <e lm="sun"><i>sun</i><par n="house__n"/></e>
     <e lm="table"><i>table</i><par n="house__n"/></e>
+    <e lm="teacher"><i>teacher</i><par n="house__n"/></e>
+    <e lm="tree"><i>tree</i><par n="house__n"/></e>    
     <e lm="water"><i>water</i><par n="fire__n"/></e>
+    <e lm="wind"><i>wind</i><par n="fish__n"/></e>
     <e lm="window"><i>window</i><par n="house__n"/></e>
+    <e lm="woman"><i>woman</i><par n="wom/an__n"/></e>
+    <e lm="wood"><i>wood</i><par n="fish__n"/></e>
+
+    <!-- Numerals -->
+    <e lm="one"><i>one</i><par n="num"/></e>
+    <e lm="two"><i>two</i><par n="num"/></e>
+    <e lm="three"><i>three</i><par n="num"/></e>
+    <e lm="four"><i>four</i><par n="num"/></e>
+    <e lm="five"><i>five</i><par n="num"/></e>
+    <e lm="six"><i>six</i><par n="num"/></e>
+    <e lm="seven"><i>seven</i><par n="num"/></e>
+    <e lm="eight"><i>eight</i><par n="num"/></e>
+    <e lm="nine"><i>nine</i><par n="num"/></e>
+    <e lm="ten"><i>ten</i><par n="num"/></e>
 
     <!-- Prepositions -->
     <e lm="on"><i>on</i><par n="on__pr"/></e>
     <e lm="near"><i>near</i><par n="on__pr"/></e>
     <e lm="by"><i>by</i><par n="on__pr"/></e>
     <e lm="to"><i>to</i><par n="on__pr"/></e>
+    <e lm="before"><i>before</i><par n="on__pr"/></e>
 
     <!-- Pronouns -->
-    <e lm="i"><i>I</i><par n="I__prn"/></e>
-    <e lm="you"><i>you</i><par n="I__prn"/></e>
+    <e lm="i"><i></i><par n="/I__prn"/></e>
+    <e lm="you"><i>you</i><par n="you__prn"/></e>
+    <e lm="he"><i>he</i><par n="this__prn"/></e>
+    <e lm="she"><i>she</i><par n="this__prn"/></e>
+    <e lm="they"><i>they</i><par n="this__prn"/></e>
+    <e lm="this"><i>this</i><par n="this__prn"/></e>
+    <e lm="that"><i>that</i><par n="this__prn"/></e>
+    <e lm="what"><i>what</i><par n="this__prn"/></e>
 
     <!-- Verbs -->
     <e lm="be"><i></i><par n="/be__v"/></e>
+    <e lm="call"><i>call</i><par n="walk__v"/></e>
     <e lm="drink"><i>dr</i><par n="dr/ink__v"/></e>
+    <e lm="do"><i>d</i><par n="d/o__v"/></e>
+    <e lm="draw"><i>dr</i><par n="dr/aw__v"/></e>
     <e lm="eat"><i></i><par n="/eat__v"/></e>
+    <e lm="enter"><i>enter</i><par n="walk__v"/></e>
+    <e lm="explain"><i>explain</i><par n="walk__v"/></e>
+    <e lm="go"><i></i><par n="/go__v"/></e>
+    <e lm="have"><i>ha</i><par n="ha/ve__v"/></e>
+    <e lm="like"><i>lik</i><par n="lik/e__v"/></e>
     <e lm="listen"><i>listen</i><par n="walk__v"/></e>
     <e lm="love"><i>love</i><par n="love__v"/></e>
     <e lm="know"><i>kn</i><par n="kn/ow__v"/></e>
+    <e lm="river"><i>river</i><par n="house__n"/></e>
     <e lm="run"><i>r</i><par n="r/un__v"/></e>
     <e lm="sit"><i>s</i><par n="s/it__v"/></e>
     <e lm="sing"><i>s</i><par n="s/ing__v"/></e>
     <e lm="sleep"><i>sle</i><par n="sle/ep__v"/></e>
+    <e lm="study"><i>stud</i><par n="stud/y__v"/></e>
     <e lm="read"><i>read</i><par n="read__v"/></e>
+    <e lm="understand"><i>underst</i><par n="underst/and__v"/></e>
     <e lm="walk"><i>walk</i><par n="walk__v"/></e>
     <e lm="sing"><i>sing</i><par n="walk__v"/></e>
+    <e lm="watch"><i>watch</i><par n="walk__v"/></e>
     <e lm="write"><i>wr</i><par n="wr/ite__v"/></e>
 
     <!-- Determiners -->
@@ -315,68 +485,26 @@
       <e lm="talk"><i>talk</i><par n="walk__v"/></e>
       <e lm="see"><i>see</i><par n="walk__v"/></e>
       <e lm="hear"><i>hear</i><par n="walk__v"/></e>
-      <e lm="bird"><i>bird</i><par n="house__n"/></e>
-      <e lm="food"><i>food</i><par n="house__n"/></e>
-      <e lm="sun"><i>sun</i><par n="house__n"/></e>
-      <e lm="moon"><i>moon</i><par n="house__n"/></e>
-      <e lm="star"><i>star</i><par n="house__n"/></e>
-      <e lm="tree"><i>tree</i><par n="house__n"/></e>
-      <e lm="flower"><i>flower</i><par n="house__n"/></e>
-      <e lm="man"><i>man</i><par n="house__n"/></e>
-      <e lm="woman"><i>woman</i><par n="house__n"/></e>
-      <e lm="boy"><i>boy</i><par n="house__n"/></e>
-      <e lm="girl"><i>girl</i><par n="house__n"/></e>
-      <e lm="love"><i>love</i><par n="walk__v"/></e>
-      <e lm="angry"><i>angry</i><par n="house__n"/></e>
       <e lm="big"><i>big</i><par n="house__n"/></e>
       <e lm="small"><i>small</i><par n="house__n"/></e>
       <e lm="hot"><i>hot</i><par n="house__n"/></e>
       <e lm="cold"><i>cold</i><par n="house__n"/></e>
       <e lm="fast"><i>fast</i><par n="house__n"/></e>
       <e lm="slow"><i>slow</i><par n="house__n"/></e>
-      <e lm="good"><i>good</i><par n="house__n"/></e>
       <e lm="bad"><i>bad</i><par n="house__n"/></e>
       <e lm="new"><i>new</i><par n="house__n"/></e>
       <e lm="old"><i>old</i><par n="house__n"/></e>
-      <e lm="beautiful"><i>beautiful</i><par n="house__n"/></e>
       <e lm="far"><i>far</i><par n="house__n"/></e>
       <e lm="here"><i>here</i><par n="on__pr"/></e>
       <e lm="there"><i>there</i><par n="on__pr"/></e>
-      <e lm="now"><i>now</i><par n="on__pr"/></e>
-      <e lm="later"><i>later</i><par n="on__pr"/></e>
-      <e lm="yes"><i>yes</i><par n="on__pr"/></e>
-      <e lm="no"><i>no</i><par n="on__pr"/></e>
       <e lm="hello"><i>hello</i><par n="house__n"/></e>
-      <e lm="what"><i>what</i><par n="I__prn"/></e>
-      <e lm="who"><i>who</i><par n="I__prn"/></e>
-      <e lm="where"><i>where</i><par n="house__n"/></e>
-      <e lm="when"><i>when</i><par n="house__n"/></e>
-      <e lm="why"><i>why</i><par n="house__n"/></e>
-      <e lm="how"><i>how</i><par n="house__n"/></e>
-      <e lm="one"><i>one</i><par n="numeral"/></e>
-      <e lm="two"><i>two</i><par n="numeral"/></e>
-      <e lm="three"><i>three</i><par n="numeral"/></e>
-      <e lm="four"><i>four</i><par n="numeral"/></e>
-      <e lm="five"><i>five</i><par n="numeral"/></e>
-      <e lm="six"><i>six</i><par n="numeral"/></e>
-      <e lm="seven"><i>seven</i><par n="numeral"/></e>
-      <e lm="eight"><i>eight</i><par n="numeral"/></e>
-      <e lm="nine"><i>nine</i><par n="numeral"/></e>
-      <e lm="ten"><i>ten</i><par n="numeral"/></e>
-      <e lm="red"><i>red</i><par n="house__n"/></e>
+      <e lm="who"><i>who</i><par n="this__prn"/></e>
+      <e lm="where"><i>where</i><par n="every__adv"/></e>
+      <e lm="when"><i>when</i><par n="every__adv"/></e>
+      <e lm="why"><i>why</i><par n="every__adv"/></e>
+      <e lm="red"><i>red</i><par n="every__adv"/></e>
       <e lm="black"><i>black</i><par n="house__n"/></e>
       <e lm="white"><i>white</i><par n="house__n"/></e>
-      <e lm="day"><i>day</i><par n="house__n"/></e>
-      <e lm="night"><i>night</i><par n="house__n"/></e>
-      <e lm="morning"><i>morning</i><par n="house__n"/></e>
-      <e lm="afternoon"><i>afternoon</i><par n="house__n"/></e>
-      <e lm="rain"><i>rain</i><par n="fish__n"/></e>
-      <e lm="wind"><i>wind</i><par n="fish__n"/></e>
-      <e lm="sky"><i>sky</i><par n="house__n"/></e>
-      <e lm="earth"><i>earth</i><par n="house__n"/></e>
-      <e lm="mountain"><i>mountain</i><par n="house__n"/></e>
-      <e lm="river"><i>river</i><par n="house__n"/></e>
-      <e lm="sea"><i>sea</i><par n="house__n"/></e>
       <e lm="rice"><i>rice</i><par n="fish__n"/></e>
       <e lm="salt"><i>salt</i><par n="fish__n"/></e>
       <e lm="blood"><i>blood</i><par n="fish__n"/></e>
@@ -396,7 +524,6 @@
       <e lm="sibling"><i>sibling</i><par n="house__n"/></e>
       <e lm="spouse"><i>spouse</i><par n="house__n"/></e>
       <e lm="child"><i>child</i><par n="house__n"/></e>
-      <e lm="friend"><i>friend</i><par n="house__n"/></e>
       <e lm="enemy"><i>enemy</i><par n="house__n"/></e>
       <e lm="ask"><i>ask</i><par n="walk__v"/></e>
       <e lm="answer"><i>answer</i><par n="walk__v"/></e>
@@ -450,13 +577,11 @@
       <e lm="month"><i>month</i><par n="house__n"/></e>
       <e lm="year"><i>year</i><par n="house__n"/></e>
       <e lm="today"><i>today</i><par n="on__pr"/></e>
-      <e lm="yesterday"><i>yesterday</i><par n="on__pr"/></e>
       <e lm="tomorrow"><i>tomorrow</i><par n="on__pr"/></e>
       <e lm="hour"><i>hour</i><par n="house__n"/></e>
       <e lm="minute"><i>minute</i><par n="house__n"/></e>
       <e lm="second"><i>second</i><par n="house__n"/></e>
       <e lm="clock"><i>clock</i><par n="house__n"/></e>
-      <e lm="watch"><i>watch</i><par n="house__n"/></e>
       <e lm="calendar"><i>calendar</i><par n="house__n"/></e>
       <e lm="season"><i>season</i><par n="house__n"/></e>
       <e lm="spring"><i>spring</i><par n="house__n"/></e>
@@ -482,12 +607,10 @@
       <e lm="kitchen"><i>kitchen</i><par n="house__n"/></e>
       <e lm="bathroom"><i>bathroom</i><par n="house__n"/></e>
       <e lm="garden"><i>garden</i><par n="house__n"/></e>
-      <e lm="park"><i>park</i><par n="house__n"/></e>
       <e lm="store"><i>store</i><par n="house__n"/></e>
       <e lm="market"><i>market</i><par n="house__n"/></e>
       <e lm="hospital"><i>hospital</i><par n="house__n"/></e>
       <e lm="church"><i>church</i><par n="house__n"/></e>
-      <e lm="school"><i>school</i><par n="house__n"/></e>
       <e lm="office"><i>office</i><par n="house__n"/></e>
       <e lm="factory"><i>factory</i><par n="house__n"/></e>
       <e lm="farm"><i>farm</i><par n="house__n"/></e>
@@ -579,7 +702,6 @@
       <e lm="gold"><i>gold</i><par n="fish__n"/></e>
       <e lm="silver"><i>silver</i><par n="fish__n"/></e>
       <e lm="iron"><i>iron</i><par n="fish__n"/></e>
-      <e lm="wood"><i>wood</i><par n="fish__n"/></e>
       <e lm="paper"><i>paper</i><par n="house__n"/></e>
       <e lm="plastic"><i>plastic</i><par n="fish__n"/></e>
       <e lm="glass"><i>glass</i><par n="fish__n"/></e>
@@ -625,11 +747,9 @@
       <e lm="coach"><i>coach</i><par n="house__n"/></e>
       <e lm="fan"><i>fan</i><par n="house__n"/></e>
       <e lm="music"><i>music</i><par n="fish__n"/></e>
-      <e lm="song"><i>song</i><par n="house__n"/></e>
       <e lm="dance"><i>dance</i><par n="walk__v"/></e>
       <e lm="art"><i>art</i><par n="house__n"/></e>
       <e lm="paint"><i>paint</i><par n="house__n"/></e>
-      <e lm="draw"><i>draw</i><par n="walk__v"/></e>
       <e lm="photo"><i>photo</i><par n="house__n"/></e>
       <e lm="camera"><i>camera</i><par n="house__n"/></e>
       <e lm="film"><i>film</i><par n="house__n"/></e>
@@ -642,14 +762,12 @@
       <e lm="book"><i>book</i><par n="house__n"/></e>
       <e lm="story"><i>story</i><par n="house__n"/></e>
       <e lm="poem"><i>poem</i><par n="house__n"/></e>
-      <e lm="letter"><i>letter</i><par n="house__n"/></e>
       <e lm="word"><i>word</i><par n="house__n"/></e>
       <e lm="sentence"><i>sentence</i><par n="house__n"/></e>
       <e lm="language"><i>language</i><par n="house__n"/></e>
       <e lm="speak"><i>speak</i><par n="walk__v"/></e>
       <e lm="learn"><i>learn</i><par n="walk__v"/></e>
       <e lm="teach"><i>teach</i><par n="walk__v"/></e>
-      <e lm="study"><i>study</i><par n="walk__v"/></e>
       <e lm="exam"><i>exam</i><par n="house__n"/></e>
       <e lm="grade"><i>grade</i><par n="house__n"/></e>
       <e lm="pass"><i>pass</i><par n="walk__v"/></e>
@@ -659,7 +777,6 @@
       <e lm="class"><i>class</i><par n="house__n"/></e>
       <e lm="lesson"><i>lesson</i><par n="house__n"/></e>
       <e lm="homework"><i>homework</i><par n="house__n"/></e>
-      <e lm="question"><i>question</i><par n="house__n"/></e>
       <e lm="problem"><i>problem</i><par n="house__n"/></e>
       <e lm="solution"><i>solution</i><par n="house__n"/></e>
       <e lm="idea"><i>idea</i><par n="house__n"/></e>
@@ -709,14 +826,12 @@
       <e lm="smell"><i>smell</i><par n="walk__v"/></e>
       <e lm="know"><i>know</i><par n="walk__v"/></e>
       <e lm="believe"><i>believe</i><par n="walk__v"/></e>
-      <e lm="understand"><i>understand</i><par n="walk__v"/></e>
       <e lm="remember"><i>remember</i><par n="walk__v"/></e>
       <e lm="forget"><i>forget</i><par n="walk__v"/></e>
       <e lm="choose"><i>choose</i><par n="walk__v"/></e>
       <e lm="decide"><i>decide</i><par n="walk__v"/></e>
       <e lm="want"><i>want</i><par n="walk__v"/></e>
       <e lm="need"><i>need</i><par n="walk__v"/></e>
-      <e lm="like"><i>like</i><par n="walk__v"/></e>
       <e lm="hate"><i>hate</i><par n="walk__v"/></e>
       <e lm="prefer"><i>prefer</i><par n="walk__v"/></e>
       <e lm="agree"><i>agree</i><par n="walk__v"/></e>
@@ -769,7 +884,6 @@
       <e lm="surprised"><i>surprised</i><par n="house__n"/></e>
       <e lm="excited"><i>excited</i><par n="house__n"/></e>
       <e lm="bored"><i>bored</i><par n="house__n"/></e>
-      <e lm="tired"><i>tired</i><par n="house__n"/></e>
       <e lm="hungry"><i>hungry</i><par n="house__n"/></e>
       <e lm="thirsty"><i>thirsty</i><par n="house__n"/></e>
       <e lm="wet"><i>wet</i><par n="house__n"/></e>
@@ -802,11 +916,9 @@
       <e lm="last"><i>last</i><par n="house__n"/></e>
       <e lm="next"><i>next</i><par n="house__n"/></e>
       <e lm="previous"><i>previous</i><par n="house__n"/></e>
-      <e lm="early"><i>early</i><par n="house__n"/></e>
       <e lm="late"><i>late</i><par n="house__n"/></e>
       <e lm="soon"><i>soon</i><par n="house__n"/></e>
       <e lm="then"><i>then</i><par n="on__pr"/></e>
-      <e lm="before"><i>before</i><par n="house__n"/></e>
       <e lm="after"><i>after</i><par n="house__n"/></e>
       <e lm="during"><i>during</i><par n="house__n"/></e>
       <e lm="while"><i>while</i><par n="house__n"/></e>
@@ -815,12 +927,10 @@
       <e lm="because"><i>because</i><par n="house__n"/></e>
       <e lm="although"><i>although</i><par n="house__n"/></e>
       <e lm="if"><i>if</i><par n="house__n"/></e>
-      <e lm="which"><i>which</i><par n="I__prn"/></e>
+      <e lm="which"><i>which</i><par n="this__prn"/></e>
       <e lm="whose"><i>whose</i><par n="house__n"/></e>
-      <e lm="that"><i>that</i><par n="I__prn"/></e>
-      <e lm="this"><i>this</i><par n="I__prn"/></e>
-      <e lm="these"><i>these</i><par n="I__prn"/></e>
-      <e lm="those"><i>those</i><par n="I__prn"/></e>
+      <e lm="these"><i>these</i><par n="this__prn"/></e>
+      <e lm="those"><i>those</i><par n="this__prn"/></e>
       <e lm="everywhere"><i>everywhere</i><par n="house__n"/></e>
       <e lm="somewhere"><i>somewhere</i><par n="house__n"/></e>
       <e lm="nowhere"><i>nowhere</i><par n="house__n"/></e>
@@ -876,7 +986,7 @@
       <e lm="throughout"><i>throughout</i><par n="house__n"/></e>
       <e lm="despite"><i>despite</i><par n="house__n"/></e>
       <e lm="as"><i>as</i><par n="house__n"/></e>
-      <e lm="than"><i>than</i><par n="house__n"/></e>
+      <e lm="thank"><i>thank</i><par n="walk__v"/></e>
       <e lm="whether"><i>whether</i><par n="house__n"/></e>
       <e lm="or"><i>or</i><par n="house__n"/></e>
       <e lm="but"><i>but</i><par n="house__n"/></e>
@@ -884,6 +994,9 @@
       <e lm="therefore"><i>therefore</i><par n="house__n"/></e>
       <e lm="however"><i>however</i><par n="house__n"/></e>
       <e lm="unless"><i>unless</i><par n="house__n"/></e>
+
+
+
       <e lm="abandon"><i>abandon</i><par n="house__n"/></e>
       <e lm="ability"><i>ability</i><par n="house__n"/></e>
       <e lm="absent"><i>absent</i><par n="house__n"/></e>
@@ -955,7 +1068,6 @@
       <e lm="breakfast"><i>breakfast</i><par n="house__n"/></e>
       <e lm="bride"><i>bride</i><par n="house__n"/></e>
       <e lm="brightness"><i>brightness</i><par n="house__n"/></e>
-      <e lm="brotherhood"><i>brotherhood</i><par n="house__n"/></e>
       <e lm="budget"><i>budget</i><par n="house__n"/></e>
       <e lm="burden"><i>burden</i><par n="house__n"/></e>
       <e lm="burial"><i>burial</i><par n="house__n"/></e>
@@ -1442,7 +1554,6 @@
       <e lm="obligation"><i>obligation</i><par n="house__n"/></e>
       <e lm="observation"><i>observation</i><par n="house__n"/></e>
       <e lm="occupation"><i>occupation</i><par n="house__n"/></e>
-      <e lm="ocean"><i>ocean</i><par n="house__n"/></e>
       <e lm="offense"><i>offense</i><par n="house__n"/></e>
       <e lm="offer"><i>offer</i><par n="house__n"/></e>
       <e lm="officer"><i>officer</i><par n="house__n"/></e>
