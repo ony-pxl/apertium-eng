@@ -458,6 +458,7 @@
     <e lm="duck"><i>duck</i><par n="house__n"/></e>      
     <e lm="couch"><i>couch</i><par n="house__n"/></e>
     <e lm="child"><i>child</i><par n="child__n"/></e>
+    <e lm="engineer"><i>engineer</i><par n="house__n"/></e>
     <e lm="exam"><i>exam</i><par n="house__n"/></e>
     <e lm="fire"><i>fire</i><par n="fire__n"/></e>
     <e lm="fish"><i>fish</i><par n="fish__n"/></e>
@@ -473,6 +474,7 @@
     <e lm="land"><i>land</i><par n="fire__n"/></e>
     <e lm="letter"><i>letter</i><par n="house__n"/></e>
     <e lm="man"><i>m</i><par n="m/an__n"/></e>
+    <e lm="manager"><i>manager</i><par n="house__n"/></e>
     <e lm="moon"><i>moon</i><par n="house__n"/></e>
     <e lm="morning"><i>morning</i><par n="house__n"/></e>
     <e lm="mountain"><i>mountain</i><par n="house__n"/></e>
@@ -484,6 +486,8 @@
     <e lm="pencil"><i>pencil</i><par n="house__n"/></e>
     <e lm="phone"><i>phone</i><par n="house__n"/></e>
     <e lm="pig"><i>pig</i><par n="house__n"/></e> 
+    <e lm="police"><i>police</i><par n="fire__n"/></e>
+    <e lm="principal"><i>principal</i><par n="house__n"/></e>
     <e lm="question"><i>question</i><par n="house__n"/></e>
     <e lm="rain"><i>rain</i><par n="fish__n"/></e>
     <e lm="rock"><i>rock</i><par n="house__n"/></e>
@@ -501,7 +505,7 @@
     <e lm="table"><i>table</i><par n="house__n"/></e>
     <e lm="teacher"><i>teacher</i><par n="house__n"/></e>
     <e lm="tree"><i>tree</i><par n="house__n"/></e>
-    <e lm="visit"><i>visit</i><par n="walk__v"/></e>
+    <e lm="visitor"><i>visitor</i><par n="house__n"/></e>
     <e lm="water"><i>water</i><par n="fire__n"/></e>
     <e lm="wind"><i>wind</i><par n="fish__n"/></e>
     <e lm="window"><i>window</i><par n="house__n"/></e>
@@ -591,6 +595,7 @@
     <e lm="understand"><i>underst</i><par n="underst/and__v"/></e>
     <e lm="walk"><i>walk</i><par n="walk__v"/></e>
     <e lm="sing"><i>sing</i><par n="walk__v"/></e>
+    <e lm="visit"><i>visit</i><par n="walk__v"/></e>
     <e lm="watch"><i>watch</i><par n="walk__v"/></e>
     <e lm="write"><i>wr</i><par n="wr/ite__v"/></e>
 
